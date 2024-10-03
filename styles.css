@@ -1,0 +1,734 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.container-fluid {
+  padding: 0 6%;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 1%;
+  }
+}
+
+:root {
+  --primary-color: #640915;
+  --background-color:#E6DDCE;
+  --step-bg-color: #f1f1f1;
+  --card-bg-color: #fff;
+  --text-color: #333;
+  --border-radius: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 20px 70px;
+}
+
+/*-------------------------------------- Navbar Section --------------------------------------*/
+.navbar {
+  background-color: #FFF;
+  position: fixed;
+  transition: all 1s ease;
+  width: 100%;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.section1{
+  background-color: var(--primary-color);
+}
+
+.navbar.section2{
+  background-color: #FFF;
+}
+
+.container-navbar {
+  display: flex;
+  align-items: center;
+  height: 10px;
+  justify-content: space-between;
+}
+
+.navbar .container-fluid {
+  padding: 2% 6%;
+}
+
+.img-logo {
+  display: flex;
+  align-items: center;
+}
+
+.img-logo img {
+  width: 18%;
+}
+
+.img-logo .img2 {
+  width: 3%;
+  height: 3%;
+  margin-left: 10px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav i {
+  color: #000;
+  display: none !important;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .container-navbar {
+    height: 55px;
+  }
+
+  .img-logo img{
+    width: 25%;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    list-style: none;
+    padding: 0;
+    gap: 0;
+  }
+
+  nav i {
+    display: block !important;
+  }
+
+  .nav-item {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+  }
+
+  .nav-list.active {
+    display: flex;
+    z-index: 9999;
+  }
+}
+
+/*--------------------------------------- Header Section ---------------------------------------*/
+header {
+  padding-top: 55px;
+  padding-bottom: 25px;
+  min-height: 89vh;
+  background-image: url(/assets/5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container-header {
+  display: flex;
+  gap: 2%;
+}
+
+.desc-header h1 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin-top: 25px;
+  background-color: #cecece;
+  padding: 25px;
+  border-radius: 5px;
+  position: relative;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #8a8989;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.image {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image img{
+  border-radius: 12px;
+  width: 75%;
+}
+
+.btn-enviar {
+  background-color: var(--primary-color);
+  padding: 18px;
+  color: #FFF;
+  margin-top: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajustes responsivos gerais */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 3%;
+  }
+
+  header {
+    background-position: 55%;
+    min-height: 75vh;
+  }
+
+  .logo-img {
+    width: 15%;
+  }
+
+  .image img {
+    margin: 0;
+    width: 90%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .desc-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .sub-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .sub-title br{
+    display: none;
+  }
+
+  .img-simbolo {
+    width: 25%;
+    left: 25px;
+    top: 560px;
+  }
+}
+
+/*--------------------------------------- Benefits Section ---------------------------------------*/
+.benefits-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.benefits-section h1 {
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.benefit-card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 50px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.benefit-card h2 {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*--------------------------------------- Nationality Section ---------------------------------------*/
+.section-nationality {
+  background: rgb(100, 9, 21);
+  background: radial-gradient(circle, rgba(100,9,21,0.7483368347338936) 30%, rgba(100, 9, 21, 1) 100%);
+  color: white;
+  padding: 40px;
+}
+
+.section-nationality h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.section-nationality p {
+  font-size: 1.2rem;
+}
+
+.section-nationality ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+}
+
+.section-nationality ul li {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.section-nationality ul li strong {
+  font-weight: bold;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.section-nationality img{
+  position: absolute;
+  bottom: -40px;
+  right: -45px;
+  width: 45%;
+}
+
+.section-nationality i{
+  margin-right: 10px;
+  font-size: 22px;
+  color: goldenrod;
+}
+
+.section-processo {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.section-processo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-nationality{
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px){
+  .content{
+    flex-direction: column;
+  }
+
+  .section-nationality img{
+    width: 140%;
+    bottom: -40px;
+    right: 0px;
+    left: -70px;
+    opacity: 0.4;
+  }
+
+  .desc-direito{
+    z-index: 99;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------- Passos Section ---------------------------------------*/
+.section-processo {
+  background-color: var(--background-color);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container-passos {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container-passos h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.container-passos h2 {
+  color: #34495e;
+}
+
+.container-passos p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #7f8c8d;
+}
+
+.next-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.next-button:hover {
+  background-color: #2ecc71;
+}
+
+.hidden {
+  display: none;
+}
+
+.step {
+  margin-bottom: 40px;
+}
+
+/*--------------------------------------- About Section ---------------------------------------*/
+.about {
+  background-color: #F5F2F3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-about {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.desc-about {
+  max-width: 550px;
+  text-align: justify;
+}
+
+.desc-about h1 {
+  color: var(--primary-color);
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.img-about {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.img-about img {
+  width: 100%;
+}
+
+.btn-about {
+  background-color: var(--primary-color);
+  color: #FFF;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .container-about {
+    flex-direction: column;
+  }
+}
+
+/*--------------------------------------- Advs Section ---------------------------------------*/
+.advs {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advs h1 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 26px;
+  padding-top: 25px;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.card-renan-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-renan {
+  background-color: #FFF;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container-cards h3 {
+  color: var(--primary-color);
+}
+
+.container-cards p {
+  line-height: 1.6;
+}
+
+.container-cards img {
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 80%;
+}
+
+.card-dai-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-dai {
+  background-color: #FFF;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-advs {
+  background-color: var(--primary-color);
+  color: #FFF;
+  margin-top: 50px;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-renan {
+    width: 300px;
+  }
+
+  .card-dai {
+    width: 300px;
+  }
+}
+
+/*--------------------------------------- maps Section ---------------------------------------*/
+.maps {
+  position: relative;
+}
+
+.contact-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f3f1;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  border: 0.2px solid var(--primary-color);
+  width: 80%;
+  height: 32%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-info h2 {
+  color: #7A1616;
+  text-align: start;
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 55px;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.contact-info h2 span {
+  text-decoration: underline;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #7A1616;
+  text-decoration: none;
+}
+
+.logo-contact {
+  position: relative;
+}
+
+.contact-info .logo-maps {
+  max-width: 85px;
+  margin-bottom: 20px;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.desc-maps {
+  max-width: 450px;
+  text-align: start;
+}
+
+.icons-text {
+  display: flex;
+  align-items: center;
+  top: 10%;
+}
+
+.icons-text .fas {
+  color: var(--primary-color);
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f7f3f1;
+    height: 55%;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .contact-info h2 {
+    text-align: start;
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-top: 30px;
+    line-height: 1;
+  }
+}
+
+/*--------------------------------------- Footer Section ---------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+footer {
+  font-weight: 300;
+}
+
+.container-footer-um {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.container-footer-um p {
+  margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
