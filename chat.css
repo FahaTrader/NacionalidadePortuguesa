@@ -1,0 +1,200 @@
+/* Estilo Global */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #640915;
+}
+
+h2, h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+a {
+  color: #640915;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  background-color: #640915;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7b091b;
+}
+
+input, select, textarea {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  padding: 12px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+.navbar-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item a {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #640915;
+}
+
+/* Header */
+header {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.desc-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.desc-header span {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  display: block;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.text-input, .tel-input, input[type="email"] {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.btn-enviar {
+  background-color: #640915;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #7b091b;
+}
+
+/* Seções */
+.benefits-section {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.benefit-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: scale(1.05);
+}
+
+.benefit-card h2 {
+  color: #333;
+}
+
+.benefit-card p {
+  color: #666;
+}
+
+.section-processo {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.step {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.about {
+  padding: 80px 0;
+  background-color: #f2f2f2;
+}
+
+.advs {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.container-about, .container-passos, .container-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.container-footer-um p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}

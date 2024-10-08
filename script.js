@@ -51,3 +51,15 @@ function resetSteps() {
   const firstStep = document.getElementById('step1');
   firstStep.classList.remove('hidden');
 }
+
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  const logoBranco = document.querySelector('.img-logo .logo-branco');
+  const logoColor = document.querySelector('.img-logo .logo-color');
+
+  if (window.scrollY > 50) { // Se a rolagem passar de 50px
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});

@@ -7,16 +7,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Nacionalidade Portuguesa - Você na Europa" />
   <meta property="description" content="O processo mais rápido para se obter o seu sonho!" />
-  <meta property="og:site_name" content="Nacionalidade Portuguesa" /> 
+  <meta property="og:site_name" content="Nacionalidade Portuguesa" />
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="chat.cs">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
-    rel="stylesheet"
-  >
+    rel="stylesheet">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
   <title>Cidadania Portuguesa</title>
@@ -26,7 +26,8 @@
   <nav class="navbar" id="navbar">
     <div class="container-fluid container-navbar">
       <div class="img-logo">
-        <img src="/assets/LOGOTIPO PRINCIPAL_COR 01.png" alt="Logo">
+        <img class="logo-branco" src="/assets/LOGOTIPO PRINCIPAL_COR BRANCO.png" alt="Logo-Branco">
+        <img class="logo-color" src="/assets/LOGOTIPO PRINCIPAL_COR 01.png" alt="Logo">
         <img class="img2" src="/assets/tug (1).png" alt="">
       </div>
       <i class="fas fa-bars"></i>
@@ -56,60 +57,59 @@
       <div class="container-fluid container-header">
         <div class="desc-header">
           <h1>
-            Conquiste sua cidadania portuguesa <br/> e ganhe oportunidades na Europa.
+            Conquiste sua Cidadania Portuguesa e Abra as Portas da Europa.
           </h1>
-          <span class="sub-title">
-            Conheça seus direitos e facilite o processo com <br /> nossos especialistas.
-          </span>
-          <form action="">
-            <label for="">Nome Completo*</label>
-            <input type="text" class="text-input" required>
-            <label for="">Email*</label>
-            <input type="email" required>
-            <label for="">Whatsapp*</label>
-            <input type="tel" class="tel-input" required>
-            <a href="" class="btn btn-enviar">
-              ENVIAR
-            </a>
-          </form>
+          <p class="sub-title">
+            Tornar-se cidadão português pode ser fácil com a ajuda da Você na Europa.
+          </p>
+          <p>
+            Deixe nossos especialistas cuidarem de todo o processo burocrático,
+            enquanto você se prepara para aproveitar os benefícios da cidadania.
+          </p>
+          <p>
+            Segurança, agilidade e experiência em cada etapa. Sua cidadania, nossa responsabilidade.
+          </p>
+          <button class="btn btn-enviar">FALE CONOSCO</button>
+        </div>
+        <div class="image">
+          <img src="/assets/imag1.webp" alt="image1">
+          <img src="/assets/imag2.jpeg" alt="image2">
+          <img src="/assets/image3.jpg" alt="image3">
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="benefits-section" id="section1">
-      <h1>Benefícios da Cidadania Portuguesa</h1>
-      <div class="benefits-container">
-        <div class="benefit-card">
-          <div class="icon">
-            <i class="fas fa-plane-departure"></i>
-          </div>
-          <h2>Liberdade de Circulação</h2>
-          <p>Com a cidadania portuguesa, você pode circular livremente pelos países da União Europeia.</p>
+    <section class="benefits-section">
+      <h2>Vantagens de Ser Cidadão Europeu</h2>
+      <div class="benefits-grid">
+
+        <div class="benefit-item">
+          <i class="fa-solid fa-coins"></i>
+          <h3>Um Legado Valioso para Sua Família</h3>
+          <p>Deixe para seus filhos o direito de viver e aproveitar as oportunidades em um dos continentes mais
+            desenvolvidos do mundo.</p>
         </div>
 
-        <div class="benefit-card" id="section2">
-          <div class="icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <h2>Acesso à Educação</h2>
-          <p>Estude nas melhores universidades europeias com preços acessíveis e sem visto estudantil.</p>
+        <div class="benefit-item">
+          <i class="fas fa-briefcase"></i>
+          <h3>Trabalhe e Viva na Europa</h3>
+          <p>Tenha a liberdade de escolher entre múltiplos países para viver, trabalhar e prosperar, aproveitando
+            salários e qualidade de vida elevados.</p>
         </div>
 
-        <div class="benefit-card">
-          <div class="icon">
-            <i class="fas fa-heartbeat"></i>
-          </div>
-          <h2>Qualidade de Vida</h2>
-          <p>Viva em um dos países mais seguros e com alta qualidade de vida.</p>
+        <div class="benefit-item">
+          <i class="fas fa-plane-departure"></i>
+          <h3>Viaje com Facilidade</h3>
+          <p>Com o passaporte europeu, acesse mais de 180 países sem a necessidade de vistos, tornando suas viagens
+            internacionais muito mais simples.</p>
         </div>
 
-        <div class="benefit-card">
-          <div class="icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <h2>Oportunidades de Trabalho</h2>
-          <p>Trabalhe em qualquer país da União Europeia sem a necessidade de visto de trabalho.</p>
+        <div class="benefit-item">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Educação de Padrão Global</h3>
+          <p>Estude nas principais universidades da Europa com acesso a bolsas e condições especiais que garantem uma
+            educação de excelência.</p>
         </div>
       </div>
     </section>
@@ -139,57 +139,63 @@
             </ul>
             <button class="btn btn-nationality">FALE CONOSCO</button>
           </div>
-          <div>
-            <img src="/assets/3.png" alt="image1">
+          <div class="img-direito">
+            <img class="img1" src="/assets/3.png" alt="image1">
+            <img class="img2" src="/assets/mobile.png" alt="image2">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="processo-nacionalidade" class="section-processo">
-      <div class="container-passos">
-        <h1>Como Obter a Nacionalidade Portuguesa</h1>
-
-        <!-- Passo 1 -->
-        <div class="step" id="step1">
-          <h2>Passo 1: Descobrir se você tem direito à nacionalidade</h2>
-          <p>Verifique se você tem direito à nacionalidade portuguesa.</p>
-          <button class="next-button" onclick="nextStep(2)">Próximo Passo</button>
+    <section class="process-section">
+      <h1>Como Obter a Nacionalidade Portuguesa</h1>
+      <div class="process-container">
+        <div class="process-step">
+          <span class="step-number">1</span>
+          <h3>Pesquisa Genealógica</h3>
+          <p>Nossos profissionais montam toda a árvore genealógica da sua família comprovando sua ascendência
+            portuguesa.</p>
         </div>
-
-        <!-- Passo 2 -->
-        <div class="step hidden" id="step2">
-          <h2>Passo 2: Reunir todos os documentos necessários</h2>
-          <p>Reúna todos os documentos como certidões de nascimento e casamento.</p>
-          <button class="next-button" onclick="nextStep(3)">Próximo Passo</button>
+        <div class="process-step">
+          <span class="step-number">2</span>
+          <h3>Busca das Certidões</h3>
+          <p>Buscamos todos os documentos para cidadania portuguesa no Brasil e em Portugal.</p>
         </div>
-
-        <!-- Passo 3 -->
-        <div class="step hidden" id="step3">
-          <h2>Passo 3: Buscar certidão Portuguesa</h2>
-          <p>Solicite a certidão portuguesa se necessário.</p>
-          <button class="next-button" onclick="nextStep(4)">Próximo Passo</button>
+        <div class="process-step">
+          <span class="step-number">3</span>
+          <h3>Análise da Documentação</h3>
+          <p>Toda a documentação é analisada separadamente por especialistas e emitimos um parecer sobre os próximos
+            passos.</p>
         </div>
-
-        <!-- Passo 4 -->
-        <div class="step hidden" id="step4">
-          <h2>Passo 4: Montar a pasta da família</h2>
-          <p>Organize todos os documentos necessários para o processo.</p>
-          <button class="next-button" onclick="nextStep(5)">Próximo Passo</button>
+        <div class="process-step">
+          <span class="step-number">4</span>
+          <h3>Preparação da Documentação</h3>
+          <p>Preparamos toda a documentação de acordo com as exigências do consulado português que pleiteará seu
+            direito.</p>
         </div>
-
-        <!-- Passo 5 -->
-        <div class="step hidden" id="step5">
-          <h2>Passo 5: Dar entrada no processo</h2>
-          <p>Inicie o processo de nacionalidade junto aos órgãos competentes.</p>
-          <button class="next-button" onclick="nextStep(6)">Próximo Passo</button>
+        <div class="process-step">
+          <span class="step-number">5</span>
+          <h3>Inscrição na Fila/ Agendamento</h3>
+          <p>A depender do procedimento adotado pelo consulado português, será necessário aguardar a fila ou agendar a
+            entrevista.</p>
         </div>
-
-        <!-- Passo 6 -->
-        <div class="step hidden" id="step6">
-          <h2>Passo 6: Aguardar o andamento do processo</h2>
-          <p>Acompanhe o andamento do processo até a finalização.</p>
-          <button class="next-button" onclick="resetSteps()">Reiniciar</button>
+        <div class="process-step">
+          <span class="step-number">6</span>
+          <h3>Entrega da Documentação</h3>
+          <p>Você recebe toda a documentação pronta para entregar ao consulado, basta assinar e levar para sua
+            entrevista.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">7</span>
+          <h3>Confirmação do Fim do Processo</h3>
+          <p>Após a entrega da documentação, monitoramos o sistema do consulado para te informar quando o processo for
+            finalizado.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">8</span>
+          <h3>Agendar a Emissão do Passaporte Português</h3>
+          <p>A partir de agora é só realizar os procedimentos para emitir o passaporte e aproveitar todas as vantagens.
+          </p>
         </div>
       </div>
     </section>
@@ -218,67 +224,81 @@
 
     <section class="advs">
       <div class="container-fluid">
-        <h1>Nossos advogados estão à disposição <br /> para atendê-los da melhor forma</h1>
+        <h1>Nossos advogados estão à disposição <br> para atendê-los da melhor forma</h1>
         <div class="container-cards">
-          <div class="card-renan">
-            <div class="card-renan-img">
-              <img src="/assets/Renan-n.webp" alt="Renan Perroti">
+          <!-- Seção da Imagem -->
+          <div class="img-adv">
+            <div class="container-fundo">
+              <img class="advs-img" src="/assets/photo-120.jpg" alt="advogados">
             </div>
+          </div>
+          <div class="desc-advs">
             <h3>Renan Perrotti</h3>
             <p>
-              Advogado no Brasil (OAB/SP 254.671), em Portugal (OA 59010P) e na Italia
-              (Iscrizione Albo do Palermo nº9057) atuante há 17 anos, sendo sócio fundador
+              Advogado no Brasil (OAB/SP 254.671), em Portugal (OA 59010P) e na Italia 
+              (Iscrizione Albo do Palermo nº9057) atuante há 17 anos, sendo sócio fundador 
               do escritório juridico Perrotti Sociedade de Advogados(OAB/SP nº 11411).
             </p>
             <p>
-              Mestrando em Direito Europeu pela Universidade do Minho,
-              criador da mentoria Advogar em Portugal começando do zero
+              Mestrando em Direito Europeu pela Universidade do Minho, 
+              criador da mentoria Advogar em Portugal começando do zero 
               (Mentoria que auxilia advogados brasileiros a internacionalizar seu escritório).
             </p>
-          </div>
-          <div class="card-dai">
-            <div class="card-dai-img">
-              <img src="/assets/dai-quadro-90.webp" alt="Daiana Perroti">
-            </div>
             <h3>Daiana Perrotti</h3>
             <p>
-              Advogada no Brasil (OAB/SP 355.305) e em Portugal (OA 59638P),
-              atuante há 9 anos, sócia do escritório jurídico Perrotti
-              Sociedade de Advogados(OAB/SP nº 11411).
+              Advogada no Brasil (OAB/SP 355.305) e em Portugal (OA 59638P), atuante há 9 anos, sócia do escritório jurídico Perrotti Sociedade de Advogados(OAB/SP nº 11411).
             </p>
             <p>
-              Especializada em gestão e liderança de pessoas, é a responsável pelo
-              treinamento e qualificação de todo atendimento do Você na Europa.
+              Especializada em gestão e liderança de pessoas, é a responsável pelo treinamento e qualificação de todo atendimento do Você na Europa.
             </p>
+            <button type="button" class="btn btn-advs">FALE CONOSCO</button>
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-advs">FALE CONOSCO</button>
-    </section>
+    </section>    
 
     <section class="maps">
-      <iframe width="100%"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6222490881355!2d-46.19402692562646!3d-23.510111959709487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd81f9fa3f98d%3A0x533d312c601bfa07!2sAv.%20Pref.%20Carlos%20Ferreira%20Lopes%2C%20703%20-%20Vila%20Mogilar%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008773-490!5e0!3m2!1spt-BR!2sbr!4v1726752661313!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <div class="contact-info">
-        <div class="logo-contact">
-          <img src="/assets/SUBMARCA_COR 01.png" alt="Logo" class="logo-maps">
-          <h2>Fale <br /> <span>conosco</span></h2>
-        </div>
-        <div class="desc-maps">
-          <div class="icons-text">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Av. Pref. Carlos Ferreira Lopes, 703 - sala 1318 - Vila Mogilar, Mogi das Cruzes - SP, 08773-490</p>
+      <div class="container-fluid container-maps">
+        <form id="form">
+          <h3>Preencha todos os campos e nossa equipe entrará em contato com você em breve!</h3>
+          <div class="form-group">
+            <label>Nome Completo</label>
+            <input type="text">
           </div>
-          <div class="icons-text">
-            <i class="fas fa-phone"></i>
-            <p>Telefone: +55 11 93442 1703</p>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email">
           </div>
-          <div class="icons-text">
-            <i class="fas fa-envelope"></i>
-            <p>E-mail: <a href="mailto:info@vocenaeuropa.com">info@vocenaeuropa.com</a></p>
+          <div class="form-group">
+            <label>Whatsapp</label>
+            <input type="tel">
+          </div>
+          <button type="button" class="btn btn-form">FALE CONOSCO</button>
+          <span>Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</span>
+        </form>
+        <iframe width="60%"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6222490881355!2d-46.19402692562646!3d-23.510111959709487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd81f9fa3f98d%3A0x533d312c601bfa07!2sAv.%20Pref.%20Carlos%20Ferreira%20Lopes%2C%20703%20-%20Vila%20Mogilar%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008773-490!5e0!3m2!1spt-BR!2sbr!4v1726752661313!5m2!1spt-BR!2sbr"
+          width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="contact-info">
+          <div class="logo-contact">
+            <img src="/assets/SUBMARCA_COR 01.png" alt="Logo" class="logo-maps">
+            <h2>Fale <br /> <span>conosco</span></h2>
+          </div>
+          <div class="desc-maps">
+            <div class="icons-text">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Av. Pref. Carlos Ferreira Lopes, 703 - sala 1318 - Vila Mogilar, Mogi das Cruzes - SP, 08773-490</p>
+            </div>
+            <div class="icons-text">
+              <i class="fas fa-phone"></i>
+              <p>Telefone: +55 11 93442 1703</p>
+            </div>
+            <div class="icons-text">
+              <i class="fas fa-envelope"></i>
+              <p>E-mail: <a href="mailto:info@vocenaeuropa.com">info@vocenaeuropa.com</a></p>
+            </div>
           </div>
         </div>
       </div>
